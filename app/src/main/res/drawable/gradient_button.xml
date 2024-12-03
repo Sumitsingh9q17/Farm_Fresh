@@ -1,0 +1,9 @@
+<!-- gradient_button.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:angle="45"
+        android:endColor="#FFC107"
+        android:startColor="#FF5722" />
+    <corners android:radius="8dp" />
+    <solid android:color="#FF5722" />
+</shape>

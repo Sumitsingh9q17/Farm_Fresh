@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permissions -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- Permissions for Android 13 and above -->
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_IMAGES"
+        android:required="false" />
+    <uses-permission
+        android:name="android.permission.READ_MEDIA_VIDEO"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+
+    <!-- Application Configuration -->
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/farmfresh"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Farm_Fresh"
+        tools:targetApi="31">
+
+        <!-- Splash Activity -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FarmFresh.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Other Activities -->
+        <activity android:name=".MainActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SignupActivity" />
+        <activity android:name=".ViewProductsActivity" />
+        <activity android:name=".ProductManagementActivity" />
+        <activity android:name=".AddProductActivity" />
+        <activity android:name=".EditProductActivity" />
+        <activity android:name=".AdminDashboardActivity" />
+        <activity android:name=".HomepageActivity" />
+        <activity android:name=".ProductsActivity" />
+        <activity android:name=".CartActivity" />
+        <activity
+            android:name=".PaymentActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".UserDetailsA" />
+        <activity android:name=".ProductDetailActivity" />
+        <activity android:name=".SearchResultsActivity" />
+        <activity android:name=".AddUserActivity" />
+        <activity android:name=".ViewUsersActivity" />
+        <activity android:name=".EditUserActivity" />
+        <activity android:name=".UserManagementActivity" />
+        <activity android:name=".UserProfileActivity" />
+        <activity android:name=".OrderHistoryActivity" />
+        <activity android:name=".SavedAddressesActivity" />
+        <activity android:name=".PaymentMethodsActivity" />
+        <activity android:name=".HelpActivity" />
+
+
+    </application>
+
+</manifest>
